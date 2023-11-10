@@ -63,7 +63,8 @@ nav{
     background-image: url(./images/background-of-icons-3x.png);
     background-position:center ;
     border: 1px solid rgb(20, 20, 20);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat-x;
 }
 
 .header-content h2{
@@ -143,12 +144,12 @@ nav{
 }
 .col-img img{
     display: block;
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 
 .features h2{
-    font-weight: 600;
+    font-weight: 650;
     margin-bottom: 15px;
 }
 
@@ -162,9 +163,87 @@ nav{
 
 .col-img-crop img{
     display: block;
-    width: 85%;
+    width: 75%;
     margin: auto;
     border: 1px solid rgb(77, 76, 76);
     border-radius: 4%;
     padding: 10px;
+}
+
+.feature-1{
+    text-align: center;
+    margin-top: 4rem;
+}
+.mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.mode img{
+    margin: 0 20px
+}
+
+/* --------------------SWITCH-------------------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #303030;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #303030;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* --------------------SHOW-------------------- */
+.show{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.show img{
+    width: 20rem;
+    border-radius: 10px;
+    margin: 0 10px;
 }
