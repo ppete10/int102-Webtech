@@ -61,11 +61,9 @@ nav{
 .header-content{
     text-align: center;
     background-image: url(./images/background-of-icons-3x.png);
-    width: 100%;
-    height: 100vh;
-    background-size: contain ;
     background-position:center ;
     border: 1px solid rgb(20, 20, 20);
+    background-size: cover;
 }
 
 .header-content h2{
@@ -121,6 +119,52 @@ nav{
     margin-bottom: 50px;
 }
 
-.Perfect{
-    width: 500;
+.features{
+    padding:50px 13%;
+    font-size: 26px;
+    color: #fff;
+    background-image: url(./images/);
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.col-text{
+    flex-basis: 50%;
+}
+
+.col-img{
+    flex-basis: 50%;
+}
+.col-img img{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.features h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.features p{
+    font-weight: 200;
+}
+.col-img-crop{
+    flex-basis: 50%;
+    padding-right: 70px;
+}
+
+.col-img-crop img{
+    display: block;
+    width: 85%;
+    margin: auto;
+    border: 1px solid rgb(77, 76, 76);
+    border-radius: 4%;
+    padding: 10px;
 }
