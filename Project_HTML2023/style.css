@@ -1,10 +1,7 @@
 * {
-    -webkit-text-size-adjust: 100%;
-    font-feature-settings: normal;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-variation-settings: normal;
     line-height: 1.5;
-    tab-size: 4;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +11,7 @@ body {
     background-color: rgb(20, 20, 20);
 }
 
+/* --------------------nav-------------------- */
 .container {
     position: fixed;
     top: 0;
@@ -47,6 +45,7 @@ nav {
 
 .menu {
     display: flex;
+    margin-right: 50px;
 }
 
 .nav-con a {
@@ -59,9 +58,20 @@ nav {
     margin-left: 1rem;
     font-size: 1.1em;
     font-weight: 650;
-    margin: 20px 30px;
+    margin: 20px 20px;
 }
 
+.tf {
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(#161616, #161616) padding-box,
+        linear-gradient(to right, #F3A952, #E18660) border-box;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+/* --------------------header-------------------- */
 .header-content {
     text-align: center;
     background-image: url(./images/background-of-icons-3x.png);
@@ -94,6 +104,7 @@ nav {
     border-radius: 30px;
 }
 
+/* --------------------As seen on-------------------- */
 .Aso {
     display: flex;
     margin: 90px auto;
@@ -127,6 +138,7 @@ nav {
     margin-bottom: 50px;
 }
 
+/* --------------------Features-------------------- */
 .features {
     padding: 50px 13%;
     font-size: 26px;
@@ -362,7 +374,7 @@ input:checked+.slider:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .scenes {
@@ -396,24 +408,127 @@ input:checked+.slider:before {
 .notes .img-detail img {
     width: 90%;
 }
-.detail-4{
-    width: 100%;
-    height: auto;
+
+.detail-4 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.box-detail {
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 10px;
+    padding-bottom: 24px;
+}
+
+/* --------------------box content-------------------- */
+.last {
+    margin:200px 0;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.SP a {
+    color: white;
+    padding: 10px 20px;
+    background: linear-gradient(#161616, #161616) padding-box,
+        linear-gradient(to right, #F3A952, #E18660) border-box;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    margin-bottom: 30px;
+}
+
+.SP {
+    margin-bottom: 30px;
+}
+
+.last a {
+    text-decoration: none;
+}
+
+.last h4 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.last .GS {
+    font-size: 30px;
+    background: -webkit-linear-gradient(45deg, #F3A952 52%, #E18660 4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --------------------footer-------------------- */
+.footer {
+    border-top: 1px solid rgb(76, 76, 76);
+    display: grid;
+    height: 250px;
+}
+
+.foot-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact img {
+    width: 30px;
+    margin: 0 5px
+}
+
+.foot-con .menu {
+    justify-self: center;
+    color: white;
+    margin-left: 50px;
+}
+
+.foot-con .menu li {
+    font-size: 20px;
+}
+
+.contact {
+    justify-self: flex-end;
+    margin-right: 70px;
+}
+
+.foot-con .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.foot-con .logo img {
+    width: 90px;
+    height: 90px;
+    margin-left: 40px;
+}
+
+.copyright {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    color: #A8A8A8;
+    margin: 0 50px;
+}
+
+.copyright .terms a {
+    color: #A8A8A8;
+    text-decoration: none;
+    justify-self: center;
+    margin: 0 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.copyright .terms {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
 }
-.box-detail{
-    border: 1px solid rgb(76, 76, 76);
-    width: 210px;
-    height: 90px;
-    margin: 4px;
-    font-size: 22px;
-    border-radius: 10px;
-}
-.box-detail p{
-    display: flex;
-    justify-content: center;
-    margin-top: 26px;
+
+.copyright p {
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
