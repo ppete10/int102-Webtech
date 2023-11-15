@@ -424,7 +424,7 @@ input:checked+.slider:before {
 
 /* --------------------box content-------------------- */
 .last {
-    margin:200px 0;
+    margin: 200px 0;
     display: inline-block;
     font-size: 22px;
 }
@@ -461,6 +461,8 @@ input:checked+.slider:before {
 
 /* --------------------footer-------------------- */
 .footer {
+    left: 0;
+    bottom: 0;
     border-top: 1px solid rgb(76, 76, 76);
     display: grid;
     height: 250px;
@@ -531,4 +533,94 @@ input:checked+.slider:before {
 .copyright p {
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.terms-page {
+    margin: 200px auto;
+    max-width: 80%;
+
+}
+
+.terms-page h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.terms-page p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.terms-page .accent {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* --------------------Contact Us-------------------- */
+.contact-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: 600;
+}
+
+.contact-con h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 26rem;
+    color: #fff;
+}
+
+form input,
+form textarea,
+form select {
+    color: #fff;
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 12px;
+    margin: 7px 0;
+    padding: 15px;
+    outline: none;
+    background-color: rgba(16, 16, 16, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    appearance: none;
+}
+
+form select option {
+    background-color: rgba(16, 16, 16, 0.3);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.send {
+    margin-bottom: 120px;
+}
+
+.send button {
+    margin: 100px 0;
+    margin-bottom: 200x;
+    padding: 10px 30px;
+    background: #E18660;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 12px;
+    outline: 0;
+    cursor: pointer;
 }
