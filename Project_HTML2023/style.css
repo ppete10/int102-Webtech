@@ -535,26 +535,33 @@ input:checked+.slider:before {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.terms-page {
+.details-page {
     margin: 200px auto;
     max-width: 80%;
 
 }
 
-.terms-page h1 {
+.details-page h1 {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
 }
 
-.terms-page p {
+.details-page p {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
 }
 
-.terms-page .accent {
+.details-page .accent {
     text-decoration: none;
+    color: #fff;
+}
+.details-page strong{
+    color: #fff;
+    font-size: 18px;
+}
+.details-page a{
     color: #fff;
 }
 
