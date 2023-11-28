@@ -741,7 +741,44 @@ form select option {
     outline: 0;
     cursor: pointer;
 }
+/* --------------------Updates-------------------- */
+.updates-con {
+    color: #fff;
+    margin: 200px 15%;
+    font-weight: bold;
+    font-family: Airbnb Cereal,sans-serif;
+}
+.updates-con hr{
+    margin:30px 0;
+    border: none;
+    height: 0.5px;
+    color: rgb(177, 177, 177);
+    background-color: rgb(177, 177, 177);
+    opacity: 30%;
+}
+.updates-con h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.updates-con p{
+    font-size: 1.05rem;
+    padding: 8px;
+    font-family: Airbnb Cereal,sans-serif;
+}
+.updates-con .dates{
+    color: #F3A952;
+}
+.updates-col {
+    display: flex;
+}
+.updates-col .details{
+    flex-basis: 70%;
+}
+.updates-col .dates{
+    flex-basis: 30%;
+}
 
+/* --------------------Responsive-------------------- */
 @media screen and (max-width: 765px) {
     .nav-con {
         display: none;
@@ -1026,5 +1063,23 @@ form select option {
     }
     .details-page{
         margin-top: 100px;
+    }
+
+    .updates-con{
+        margin-top: 100px;
+    }
+    .updates-con h2{
+        font-size: 28px;
+    }
+
+    .updates-con p{
+        font-size: 14px;
+    }
+    .updates-col{
+        display: flex;
+        flex-direction: column;
+    }
+    .updates-con hr{
+        margin: 15px 0;
     }
 }
