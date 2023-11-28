@@ -336,8 +336,8 @@ input:checked+.slider:before {
 }
 
 .detail-1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 30px 0;
 }
@@ -345,6 +345,7 @@ input:checked+.slider:before {
 .advanced {
     border: 1px solid rgb(76, 76, 76);
     border-radius: 10px;
+    flex-basis: 65%;
     margin-right: 1rem;
     margin-bottom: 10px;
 }
@@ -354,13 +355,14 @@ input:checked+.slider:before {
 }
 
 .advanced .img-detail img {
-    max-width: 90%;
+    max-width: 765px;
     margin-top: 90px;
 }
 
 .full-catalog {
     border: 1px solid rgb(76, 76, 76);
     border-radius: 10px;
+    flex-basis: 33%;
     margin-bottom: 10px
 }
 
@@ -370,7 +372,7 @@ input:checked+.slider:before {
 }
 
 .full-catalog .img-detail img {
-    max-height: 500px;
+    height: 500px;
     margin-top: 30px;
 }
 
