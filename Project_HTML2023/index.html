@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lofi.co - Project Clone INT102</title>
     <link rel="stylesheet" href="style.css">
-    <script src="style.css"></script>
 </head>
 
 <body>
-
+    <script src="./script.js"></script>
     <nav>
         <div class="container">
             <div class="nav-con">
@@ -23,17 +22,22 @@
                     <li><a href="updates.html">Updates</a></li>
                     <li><a href="https://brew.lofi.co/">Blog</a></li>
                     <li><a href="https://lofi.co/music/">Music</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="https://lofi.co/faq/">FAQ</a></li>
                     <li><a href="https://lofi.co/pricing/">Pricing</a></li>
                     <li><a href="https://app.lofi.co/" class="tf">Try for free</a></li>
                 </ul>
             </div>
         </div>
-        <div class="toggle-btn">
-            <img src="./images/bars.svg" alt="">
+        <div class="hambtn">
+            <div class="toggleHam" onclick="toggleHam(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
 
-        <div class="dropdown-menu open">
+
+        <div class="dropdown-menu" id="dropdown">
             <ul class="menu">
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="updates.html">Updates</a></li>
@@ -47,7 +51,7 @@
 
     <div class="header-content">
         <h2>Your calm, digital <br> environment to <br> Relax</h2>
-        <img class="img1" src="./images/app-screenshot-2.png" alt="">
+        <img class="header-img" src="./images/app-screenshot-2.png" alt="">
         <h3>Bringing calm productivity to over 150,000 users every month</h3>
     </div>
 
@@ -63,14 +67,15 @@
         <div class="row">
             <div class="col-text">
                 <h2>The Perfect Playlist</h2>
-                <p>Hit play and get into the zone instantly.<br>No ads. No distracting lyrics.</p>
+                <p>Hit play and get into the zone instantly.
+                    No ads. No distracting lyrics.</p>
             </div>
             <div class="col-img">
                 <img src="./images/perfect-playlist-illustration-desktop-3x.png" alt="">
             </div>
         </div>
 
-        <div class="row">
+        <div class="row2">
             <div class="col-img-crop">
                 <img src="./images/crop.png" alt="">
             </div>
@@ -81,8 +86,9 @@
         </div>
         <div class="feature-1">
             <h2>Craft your focus environment</h2>
-            <p>Would you rather get it done in the cafe,<br>
-                or escape to the beach? lofi.co gives you<br>both and a lot more.</p>
+            <p>Would you rather get it done in the cafe,
+                or escape to the beach? lofi.co gives you
+                both and a lot more.</p>
             <div class="mode">
                 <img src="./images/day-switch.png" alt="">
                 <label class="switch">
@@ -119,7 +125,7 @@
             <div class="advanced">
                 <div class="text-detail">
                     <h3>Advanced timer</h3>
-                    <p>Pomodoro timer with time-<br>trackedtasks and live report.</p>
+                    <p>Pomodoro timer with time-trackedtasks and live report.</p>
                 </div>
                 <div class="img-detail">
                     <img src="./images/advanced-timer-3x.png" alt="">
@@ -144,9 +150,11 @@
                     <p>Track for how long you have focused every day, and a lot more.</p>
                 </div>
                 <div class="img-detail">
-                    <img src="./images/productivity-insights-desktop-3x.png" alt="">
+                    <img class="img-desk" src="./images/productivity-insights-desktop-3x.png" alt="">
+                    <img class="img-3x" src="./images/productivity-insights-3x.png" alt="">
                 </div>
             </div>
+
         </div>
 
         <div class="detail-3">
@@ -172,25 +180,28 @@
         </div>
         <div class="detail-4">
             <div class="box-detail">
+                <img src="./images/pdf-logo.svg" alt="">
                 <h3>PDF Reader</h3>
             </div>
 
             <div class="box-detail">
+                <img src="./images/playlists-img.svg" alt="">
                 <h3>Custom playlists</h3>
             </div>
 
             <div class="box-detail">
+                <img src="./images/templates-img.svg" alt="">
                 <h3>Templates</h3>
             </div>
 
-            <div class="box-detail">
+            <div class="box-detail lastbox">
                 <h3>and more</h3>
             </div>
         </div>
         <div class="last">
             <h4 class="SP"><a href="https://lofi.co/pricing/">See princing</a></h4>
             <h4>Or</h4>
-            <h4 class="GS"><a href="https://app.lofi.co/">Get start for free</a></h4>
+            <h4 class="GS"><a href="https://app.lofi.co/">Get started for free</a></h4>
         </div>
     </div>
     <div class="footer">
@@ -201,7 +212,8 @@
             </div>
 
             <div class="contact">
-                <a href="https://twitter.com/lofidotco"><img src="./images/twitter-icon.svg" alt=""></a>
+                <a href="https://twitter.com/lofidotco"><img src="./images/twitter-icon.svg" alt=""
+                        class="twitter-icon"></a>
                 <a href="https://www.instagram.com/lofi"><img src="./images/ig-icon.svg" alt=""></a>
             </div>
 
