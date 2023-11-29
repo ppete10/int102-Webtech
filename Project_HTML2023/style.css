@@ -816,7 +816,7 @@ form select option {
         position: absolute;
         right: 2em;
         top: 80px;
-        width: 160px;
+        width: 180px;
         border-radius: 15px;
         justify-content: center;
     }
@@ -829,7 +829,7 @@ form select option {
     }
 
     .dropdown-menu .menu li a {
-        font-weight: 600;
+        font-weight: 550 !important;
     }
 
     .hambtn {
@@ -884,8 +884,9 @@ form select option {
         margin-top: 30px;
     }
 
-    .header-img {
+    .Slides {
         max-width: 85%;
+        margin: 0 auto;
     }
 
     .features {
