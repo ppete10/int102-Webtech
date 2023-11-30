@@ -639,6 +639,120 @@ input:checked+.slider:before {
 .details-page a {
     color: #fff;
 }
+/* --------------------Music page------------------- */
+.part-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    font-weight: 600;
+}
+
+.part-con h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+}
+.part-btn a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 12px;
+    background-color: rgb(33, 32, 32);
+}
+.part-btn{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.part-con .row{
+    padding: 0;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.part-img {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.part-img img{
+    max-width: 128px;
+    max-height: 128px;
+    padding: 8px;
+}
+.slow{
+    margin: 0 13%;
+    display: flex;
+}
+.slow .col-img img{
+    width: 440px;
+    margin: 0;
+}
+.slow .col-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 440px;
+    margin: 0;
+    padding: 8px;
+}
+
+.slow .col-text h2{
+    text-align: left;
+    margin-bottom: 32px;
+}
+.slow .col-text p{
+    color: #837E7E;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.slow .col-text a {
+    display: flex;
+    padding: 12px 18px;
+    background: #3D8F4F;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    align-items: center;
+    border-radius: 26px;
+    align-self: start;
+}
+.slow .col-text img{
+    margin-right: 8px;
+}
+.slow .col-text a p{
+    color: #fff;
+}
+.with-us{
+    margin-top: 80px;
+}
+.with-us .part-btn{
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+.spt-btn a{
+    display: none;
+    padding: 12px 18px;
+    background: #3D8F4F;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    align-items: center;
+    border-radius: 26px;
+    align-self: start;
+}
+.spt-btn img{
+    margin-right: 8px;
+}
+
 
 @media screen and (max-width: 765px) {
     .foot-con {
@@ -1125,5 +1239,57 @@ form select option {
 
     .updates-con hr {
         margin: 15px 0;
+    }
+    .part-con h2{
+        font-size: 28px;
+    }
+    .part-img {
+        gap: 10px;
+    }
+    .part-img img{
+        max-width: 75px;
+        max-height: 128px;
+    }
+    .slow{
+        margin: 0 12%;
+    }
+    .slow p{
+
+    }
+    .slow .row{
+        display: block;
+    }
+    .slow .col-img img{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .slow .col-text{
+        width: 440px;
+        margin: 0;
+        padding: 0;
+    }
+    .slow .col-text h2{
+        text-align: center;
+        font-size: 32px;
+    }
+    .slow .col-text p{
+        text-align: center;
+        font-size: 16px;
+        margin: 0 30px;
+        margin-bottom: 24px;
+    }
+    .slow .col-text a{
+        display: none;
+    }
+    .slow .col-text {
+        margin: 0 30px;
+    }
+    .spt-btn a{
+        display: flex;
+        margin-top: 20px;
+    }
+    .spt-btn{
+        display: flex;
+        justify-content: center;
     }
 }
