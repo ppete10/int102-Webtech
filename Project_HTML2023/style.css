@@ -987,9 +987,9 @@ form select option {
         transform: translate(0, -5px) rotate(45deg);
     }
 
-
     .header-content h2 {
         font-size: 35px;
+        margin-bottom: 80px;
     }
 
     .header-content h3 {
